@@ -1,0 +1,94 @@
+@import "variable";
+@import "reset";
+@import "grid";
+@import "base";
+@import "flex";
+
+.header {
+  background: $primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+
+  @include phone {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .logo {
+    margin: 10px 0;
+
+    @include phone {}
+
+    a {
+      width: 80px;
+      height: 48px;
+      background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true);
+      background-repeat: no-repeat;
+      display: block;
+      white-space: nowrap;
+      text-indent: 101%;
+      overflow: hidden;
+      margin-left: 88px;
+      background-size: contain;
+
+      @include pad {
+        margin-left: 40px;
+      }
+
+      @include phone {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.header ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @include phone {
+    width: 100%;
+  }
+
+  li {
+    padding-right: 64px;
+
+    @include pad {
+      padding-right: 40px;
+    }
+
+    @include phone {
+      border: 1px solid#fff;
+      width: 49%;
+      padding-right: 0px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      padding: 5px;
+
+      @include phone {
+        font-size: 20px;
+        text-align: center;
+        padding: 8px 0;
+      }
+
+      &:hover {
+        color: yellow;
+      }
+    }
+  }
+}
+
+.question {
+  margin-right: 80px;
+
+  @include phone {
+    margin-right: 0px;
+  }
+}

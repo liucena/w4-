@@ -1,0 +1,133 @@
+.location {
+    margin-bottom: 324px;
+
+    @include pad() {
+        margin-bottom: 104px;
+        padding: 0 39px;
+    }
+
+    @include phone() {
+        margin-bottom: 56px;
+        padding: 0 15px;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: bold;
+        padding: 12px 24px;
+        border: 1px solid #00000020;
+
+        @include pad() {
+            font-size: 16px;
+            line-height: 24px;
+            padding: 8px 16px;
+        }
+    }
+
+    &-form {
+        padding-top: 16px;
+        padding-bottom: 32px;
+
+        @include pad() {
+            padding-bottom: 24px;
+        }
+
+        @include phone() {
+            padding-bottom: 20px;
+        }
+    }
+
+    &-position ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include pad() {
+            justify-content: space-between;
+        }
+
+        li {
+            width: 30%;
+            margin-right: 30px;
+            border: 1px solid #00000020;
+            margin-bottom: 52px;
+
+            @include pad() {
+                width: 45%;
+                margin-bottom: 20px;
+            }
+
+            @include phone() {
+                width: 100%;
+                margin-bottom: 16px;
+                margin-right: 0;
+            }
+        }
+    }
+
+    &-infor {
+        border: 1px solid hsla(0, 0%, 0%, 0.125);
+        padding: 16px 24px;
+
+        img {
+            padding-right: 12px;
+
+            @include pad() {
+                width: 20px;
+                padding-right: 16px;
+            }
+        }
+    }
+}
+
+.city {
+    padding-right: 20px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.countiesth {
+    width: 324px;
+    height: 45px;
+}
+
+.tel,
+.time,
+.map {
+    display: flex;
+    align-items: center;
+
+    p {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: bold;
+
+        @include pad() {
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+}
+
+.tel,
+.time {
+    padding-bottom: 8px;
+}
+
+.Details {
+    display: block;
+    text-decoration: none;
+    border: 1px solid #00000020;
+    text-align: center;
+    padding: 20px 0;
+    background: #000000;
+    color: #fff;
+    font-size: 19px;
+    line-height: 26px;
+
+    &:hover {
+        background: red;
+    }
+}
+
+/* location 375完 */

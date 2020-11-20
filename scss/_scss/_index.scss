@@ -1,0 +1,593 @@
+.banner {
+  background-image: url(https://github.com/liucena/-/blob/main/week3/banner.png?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 840px;
+  display: flex;
+  align-items: center;
+
+  @include pad() {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true);
+  }
+
+  @include phone() {
+    height: 394px;
+  }
+
+  span {
+    text-align: right;
+    font-size: 36px;
+    line-height: 54px;
+    display: block;
+
+    @include pad() {
+      font-size: 20px;
+      line-height: 30px;
+      padding-right: 39px;
+    }
+
+    @include phone() {
+      font-size: 16px;
+    }
+  }
+
+  &-title {
+    text-align: right;
+    font-size: 64px;
+    line-height: 96px;
+    color: #650300;
+    font-weight: bolder;
+
+    @include pad() {
+      font-size: 48px;
+      line-height: 72px;
+      padding-right: 39px;
+    }
+
+    @include phone() {
+      font-size: 32px;
+      line-height: 72px;
+      padding-right: 15px;
+    }
+  }
+}
+
+/*banner375結束*/
+.content {
+  padding: 64px 0 80px 0;
+  background: #aa06010d 0% 0% no-repeat padding-box;
+  margin-bottom: 64px;
+
+  @include pad() {
+    padding: 40px 0 40px 0;
+  }
+
+  @include phone() {
+    margin-bottom: 0;
+    padding: 32px 0 32px 0;
+  }
+
+  .h2 {
+    text-align: center;
+    margin-bottom: 60px;
+
+    @include pad() {
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    @include phone() {
+      margin-bottom: 20px;
+    }
+  }
+
+  .h4 {
+    text-align: center;
+    padding-bottom: 4px;
+  }
+
+  img {
+    margin: 0 auto;
+    margin-bottom: 43px;
+
+    @include phone() {
+      margin-bottom: 16px;
+    }
+  }
+
+  .content-mb {
+    margin-bottom: 55px;
+  }
+
+  p {
+    line-height: 24px;
+    text-align: left;
+  }
+}
+
+.content ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @include pad() {
+    justify-content: space-around;
+  }
+
+  li {
+    width: 23%;
+    margin: 0 1%;
+
+    @include pad() {
+      width: 40%;
+      margin-bottom: 40px;
+    }
+
+    @include phone() {
+      width: 60%;
+    }
+  }
+}
+
+/*content375結束*/
+
+.glass {
+  display: flex;
+  align-items: center;
+
+  &-img {
+    margin-right: 30px;
+  }
+}
+
+.glass2 {
+  display: flex;
+  flex-direction: row-reverse;
+
+
+  @include pad() {
+    flex-direction: row;
+  }
+
+  .h3 {
+    margin-right: 30px;
+
+    @include pad() {
+      font-size: 28px;
+      line-height: 42px;
+      margin-left: 30px;
+      margin-right: 0;
+    }
+  }
+
+
+
+
+}
+
+.products {
+  margin-bottom: 80px;
+
+  @include pad() {
+    margin-bottom: 40px;
+  }
+
+  @include phone() {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+
+  img {
+
+    @include phone() {
+      width: 90%;
+    }
+  }
+
+
+  .h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    color: #650300;
+
+    @include phone() {
+      margin-top: 32px;
+      font-size: 20px;
+      line-height: 48px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .h3 {
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+    line-height: 72px;
+    color: #aa0601;
+
+    @include phone() {
+      color: #fff;
+      position: absolute;
+    }
+
+    @include phone() {
+      color: #fff;
+      position: absolute;
+    }
+  }
+
+
+}
+
+.products ul {
+  @include pad() {
+    margin-left: 39px;
+
+    @include phone() {
+      margin-left: 0;
+    }
+  }
+
+  li {
+    margin-bottom: 32px;
+
+    @include pad() {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.first::before {
+  content: "";
+  width: 48px;
+  height: 37px;
+  display: inline-block;
+  margin-right: 8px;
+  background-position: center;
+  background: url(https://raw.githubusercontent.com/liucena/-/fdd0c30f788eb84c3c53061567c01be3fe13ac5d/week3/icon-diamond.svg);
+
+  @include pad() {
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+  }
+
+  @include phone() {
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/7059003f6d011be52053cb5e63d68f3999af01d7/week3/icon-diamond-white.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.second::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  margin-right: 8px;
+  background-position: center;
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week3/icon-sun.svg);
+
+  @include pad() {
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+  }
+
+  @include phone() {
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/7059003f6d011be52053cb5e63d68f3999af01d7/week3/icon-sun-white.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.third::before {
+  content: "";
+  width: 35px;
+  height: 48px;
+  display: inline-block;
+  margin-right: 8px;
+  background-position: center;
+  background: url(https://raw.githubusercontent.com/liucena/-/fdd0c30f788eb84c3c53061567c01be3fe13ac5d/week3/icon-thunder.svg);
+
+  @include pad() {
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+  }
+
+  @include phone() {
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/7059003f6d011be52053cb5e63d68f3999af01d7/week3/icon-thunder-white.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.glass,
+.glass2 {
+  @include phone() {
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include phone() {
+    &-img {
+      margin: 0 15px;
+    }
+  }
+}
+
+/*products375結束*/
+.Joint-design {
+  background: url(https://hexschool.github.io/webLayoutTraining1st/week3/bg.png);
+  background-size: cover;
+  padding-bottom: 80px;
+  background-position: 0px 57%;
+  margin-bottom: 64px;
+
+  @include pad() {
+    margin-bottom: 40px;
+  }
+
+  @include phone() {
+    padding-top: 32px;
+    padding: 32px;
+    margin-bottom: 20px;
+  }
+
+
+  .h2 {
+    color: #fff;
+    padding-top: 64px;
+    text-align: center;
+    margin-bottom: 60px;
+
+    @include pad() {
+      padding-top: 40px;
+      margin-bottom: 32px;
+      font-size: 32px;
+      line-height: 48px;
+    }
+  }
+}
+
+.Joint-design ul {
+  display: flex;
+
+  @include pad() {
+    padding: 0 39px;
+  }
+
+  @include phone() {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    position: relative;
+    background-size: cover;
+
+    @include phone() {
+      margin-bottom: 16px;
+      width: 100%;
+    }
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: #aa0601;
+      font-size: 72px;
+      line-height: 95px;
+      transform: translate(-50%, -50%);
+
+      @include pad() {
+        font-size: 32px;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+/*Joint-design375結束*/
+.recommend {
+  margin-bottom: 128px;
+
+  @include pad() {
+    padding: 0 39px;
+    margin-bottom: 80px;
+  }
+
+  @include phone() {
+    padding: 0 15px;
+    margin-bottom: 64px;
+  }
+
+  .h2 {
+    text-align: center;
+    margin-bottom: 60px;
+
+    @include pad() {
+      margin-bottom: 40px;
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    @include phone() {
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 48px;
+    }
+  }
+
+  h3 {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 14px 0 7px 0px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+
+    @include pad() {
+      flex-wrap: wrap;
+    }
+  }
+
+  li {
+    margin-right: 30px;
+    border: 1px solid#DEE2E6;
+
+    @include pad() {
+      width: 45%;
+      border: 1px solid#DEE2E6;
+      margin-bottom: 28px;
+      margin-right: 0;
+    }
+
+    @include phone() {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+
+  img {
+    @include pad() {
+      width: 100%;
+    }
+  }
+
+}
+
+.opinion {
+  padding: 0 16px;
+  line-height: 24px;
+  color: #212529;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.date {
+  padding: 10px 0 0 0;
+  font-size: 14px;
+  line-height: 21px;
+  color: #707070;
+}
+
+/*Joint-design375結束*/
+.connection {
+  padding-bottom: 96px;
+  background: #AA06010D;
+
+  @include pad() {
+    padding-bottom: 48px;
+  }
+
+  @include phone() {
+    padding: 0 15px 40px 0;
+  }
+
+  .h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    padding-top: 64px;
+
+    @include pad() {
+      font-size: 32px;
+      line-height: 48px;
+      padding-top: 40px;
+      margin-bottom: 16px;
+    }
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+
+    @include pad() {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.container2 {
+  max-width: 730px;
+  margin: 0 auto;
+
+  @include pad() {
+    max-width: 450px;
+  }
+}
+
+.form-label {
+  line-height: 24px;
+  font-weight: bold;
+  padding-bottom: 4px;
+  display: block;
+}
+
+.form-input {
+  width: 100%;
+  display: block;
+  padding: 14px 0 14px 16px;
+
+  @include phone() {
+    padding: 14px 0 14px 0px;
+  }
+}
+
+.form-field {
+  margin-bottom: 16px;
+}
+
+.textarea {
+  width: 100%;
+  display: block;
+  padding: 14px 0 14px 16px;
+
+  @include phone() {
+    padding: 14px 0 14px 0px;
+  }
+}
+
+.privacy {
+  font-weight: bold;
+
+}
+
+.form-group {
+  margin-bottom: 42px;
+
+  @include pad() {
+    margin-bottom: 28px;
+  }
+}
+
+.submit {
+  margin: 0 auto;
+  display: block;
+  padding: 16px 143px;
+  background: #AA0601;
+  color: #FFF;
+  margin-bottom: 80px;
+
+  @include pad() {
+    padding: 8px 78px;
+  }
+
+  @include phone() {
+    padding: 8px 54px;
+  }
+}
+
+/*connection 375結束*/
